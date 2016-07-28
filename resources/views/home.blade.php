@@ -4,11 +4,11 @@
 	<div class="container">
 	  <div class="jumbotron noteView">
 		<div class="col-md-12">
-			<span class="glyphicon glyphicon-resize-small col-md-1 col-lg-1" title="Hide Note"></span>
-			<span class="glyphicon glyphicon-remove-circle col-md-1 col-lg-1" title="Delete Note"></span>
-			<span class="glyphicon glyphicon-repeat col-md-1 col-lg-1" title="Restore Note"></span>
-			<span class="glyphicon glyphicon-share col-md-1 col-lg-1" title="Share Note"></span>
-			<span class="glyphicon glyphicon-pencil col-md-1 col-lg-1" title="Edit Note"></span>
+			<span class="glyphicon glyphicon-resize-small col-sm-3 col-md-1" title="Hide Note"></span>
+			<span class="glyphicon glyphicon-remove-circle col-sm-3 col-md-1" title="Delete Note"></span>
+			<span class="glyphicon glyphicon-repeat col-sm-3 col-md-1" title="Restore Note"></span>
+			<span class="glyphicon glyphicon-share col-sm-3 col-md-1" title="Share Note"></span>
+			<span class="glyphicon glyphicon-pencil col-sm-3 col-md-1" title="Edit Note"></span>
 		</div>
 		<div class="note">
 			<h1></h1>
@@ -56,7 +56,7 @@
 			<?php
 				foreach ($myNotes as $myNote) {
 					$noteHTML = "";
-					$noteHTML .= '<div noteId = "'.$myNote->id.'" class="list-group-item noteContainer"><a href="#pageTop">';
+					$noteHTML .= '<div noteId = "'.$myNote->id.'" class="list-group-item noteContainer col-md-12 col-lg-12"><a href="#pageTop">';
 					$noteHTML .= '<h4 class="list-group-item-heading">'.$myNote->title.'</h4></a>';
 					$noteHTML .= '<p class="list-group-item-text">'.str_limit($myNote->body, 100).'</p>';
 					$noteHTML .= '<span id="noteBodyHidden">'.$myNote->body.'</span>';

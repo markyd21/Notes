@@ -2,11 +2,14 @@
 	display:none;
 }
 
+.noteView .col-md-12{
+	text-align:center;
+}
+
 .noteView span{
-	margin: 20px 10px 0px 10px;
+	margin: 20px 0px 0px 0px;
 	top:-30px;
 	font-size:1.5em;
-	float:right;
 	cursor:pointer;
 }
 
@@ -40,4 +43,8 @@
 
 #shareNoteForm{
 	display:none;
+}
+
+.row{
+	padding-left:15px !important;
 }
