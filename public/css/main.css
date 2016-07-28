@@ -1,0 +1,43 @@
+.noteView{
+	display:none;
+}
+
+.noteView span{
+	margin: 20px 10px 0px 10px;
+	top:-30px;
+	font-size:1.5em;
+	float:right;
+	cursor:pointer;
+}
+
+.noteView form{
+	display:none;
+}
+
+.noteView form *{
+	display:block;
+}
+
+.noteView form textarea{
+	height:150px;
+}
+
+.noteView form label{
+	text-align:left !important;
+}
+
+.noteView form button{
+	display:inline;
+}
+
+.noteView .glyphicon-repeat{
+	display:none;
+}
+
+.noteContainer span{
+	display:none;
+}
+
+#shareNoteForm{
+	display:none;
+}
