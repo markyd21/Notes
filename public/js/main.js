@@ -153,10 +153,8 @@ function viewDeletedNote(thisObj)
 {
 	var noteObj = getNoteData(thisObj);
 	setNoteData(noteObj);
-	hideShareGlyphIcon();
 	$('.noteView .glyphicon-repeat').show();
 	$('.noteView .glyphicon-remove-circle').hide();
-	hideEditGlyphIcon();
 	showNoteView();
 }
 
@@ -271,16 +269,6 @@ function clearNoteEditForm()
 function hideNoteEditForm()
 {
 	$('.noteView form').hide();
-}
-
-function hideEditGlyphIcon()
-{
-	$('.noteView .glyphicon-pencil').hide();
-}
-
-function hideShareGlyphIcon()
-{
-	$('.noteView .glyphicon-share').hide();
 }
 
 function showGlyphIcons()
